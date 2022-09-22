@@ -4,7 +4,8 @@
   "description": "Savvy Coders Full Stack Cohort Preview Night Project",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "live-server ."
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/savvy-coders/sc-fs-preview-project/issues"
   },
-  "homepage": "https://github.com/savvy-coders/sc-fs-preview-project#readme"
+  "homepage": "https://github.com/savvy-coders/sc-fs-preview-project#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
 }
