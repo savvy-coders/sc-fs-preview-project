@@ -1,18 +1,18 @@
-var parseNumbers = function(){
-  var input1 = prompt("What is your first number?");
-  var input2 = prompt("What is your second number?");
-  var num1 = parseInt(input1, 10);
-  var num2 = parseInt(input2, 10);
+function parseNumbers() {
+  let input1 = prompt("What is your first number?");
+  let input2 = prompt("What is your second number?");
+  let num1 = parseInt(input1, 10);
+  let num2 = parseInt(input2, 10);
 
-  if(isNaN(num1) === true || isNaN(num2) === true){
+  if (isNaN(num1) === true || isNaN(num2) === true) {
     alert("Please input two numbers. Click the button to try again!");
-  } else { 
+  } else {
     return [ num1, num2 ];
   }
 };
 
-var parseOperation = function( action, num1, num2 ){
-  if(action === 'add'){
+function parseOperation( action, num1, num2 ) {
+  if (action === 'add') {
     alert( num1 + num2 );
   } else if(action === 'subtract'){
     alert( num1 - num2 );
@@ -27,11 +27,11 @@ var parseOperation = function( action, num1, num2 ){
   }
 };
 
-var calc = function(){
-  var input = parseNumbers();
-  var action = "";
-  var num1;
-  var num2;
+function calc() {
+  let input = parseNumbers();
+  let action = "";
+  let num1;
+  let num2;
 
   if( input ){
     num1 = input[0];
@@ -42,7 +42,7 @@ var calc = function(){
   }
 };
 
-var button = document.querySelector("#calculate");
-button.addEventListener("click", function(){
+let button = document.querySelector("#calculate");
+button.addEventListener("click", function() {
   calc();
 });
